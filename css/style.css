@@ -312,8 +312,38 @@ Debug
     height: 400px;
     background-color: rgb(111, 184, 184);
     padding: 100px;
+    outline: 3px dashed black;
+    margin-bottom: 35px;
 }
 
 p{
     margin: 30px;
+}
+
+.debug footer .col-1_7{
+    width: calc(100% / 7);
+    height:340px ;
+    outline: 3px dashed black;
+    background-color: antiquewhite;
+}
+
+.debug footer .footer-menu{
+    background-color: rgb(105, 32, 105);
+    outline: 3px dashed black;  
+    height:400px;
+    justify-content: space-around;
+    padding: 0 200px;
+}   
+
+footer{
+    background-color: greenyellow;
+
+}
+
+.lingua{
+    text-align: center
+}
+
+hr{
+    border-top: 3px solid black;
 }
