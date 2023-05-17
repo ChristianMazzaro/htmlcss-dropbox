@@ -39,7 +39,7 @@ GENERAL
 
 
 .container{
-    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -91,6 +91,7 @@ Debug
     width: 100%;
     height: 70px;
     position: fixed;
+    z-index: 1;
 }
 
 
@@ -250,24 +251,26 @@ Debug
 .debug main section .operations{
     background-color: yellowgreen;
     width: 1050px;
-    height: 800px;
+    height: 843px;
     outline: 3px dashed black;
     margin-top: 130px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    
+    margin-bottom: 35px;
 
 }
 
-h2{
-    text-align: center;
+.debug main section .operations .columns{
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.text-box{
+    text-align:center;
+    padding: 30px;
 }
 
 .debug main section .operations .col-1_6{
     outline: 3px dashed white;
     background-color: black;
-    width: calc(1050px / 3);
-    height: 450px;
-    
+    width: calc((1050px / 3) - 20px);
+    height: 380px;
 }
