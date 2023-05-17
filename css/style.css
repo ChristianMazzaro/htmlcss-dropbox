@@ -116,22 +116,29 @@ Debug
     background-color: greenyellow;
     width: 100%;
     height: 650px;
-    align-items: flex-end;
     display: flex;
-    flex-wrap:wrap ;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
+    padding: 50px;
 }
 
 
 .title-header-bottom{
-    align-self:flex-end;
+    position: relative;
 }
+
+.title{
+    position: absolute;
+    top: 130px;
+    left: 300px;
+}
+
+
 
 .debug header .header-bottom .my-row .col-3{
     background-color: rgb(163, 113, 44);
     outline: 3px dashed black;
-    width: 500px;
+    width: 350px;
     height: 325px;
 }
 
@@ -191,7 +198,7 @@ Debug
 
 .debug main section .container .my-row-main-2 .main-col-1_3{
     width: calc((100% / 3) - 30px);
-    height: 100%;
+    align-self: stretch;
     outline: 3px dashed black;
     background-color: lightcoral;
 }
@@ -212,4 +219,55 @@ Debug
     width: 100%;
     outline: 3px dashed black;
     background-color: aqua;
+}
+
+
+.debug main .partners{
+    display: flex;
+    align-items:flex-end ;
+    justify-content:center ;
+    margin-top: 150px;
+}
+
+
+
+.debug main .partners .my-row .col-3{
+    background-color: rgb(163, 113, 44);
+    outline: 3px dashed black;
+    width: 350px;
+    height: 325px;
+}
+
+
+.debug main .partners .my-row .col-4{
+    background-color: rgb(165, 71, 142);
+    outline: 3px dashed black;
+    width: 500px;
+    height: 325px;
+}
+
+
+.debug main section .operations{
+    background-color: yellowgreen;
+    width: 1050px;
+    height: 800px;
+    outline: 3px dashed black;
+    margin-top: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+
+}
+
+h2{
+    text-align: center;
+}
+
+.debug main section .operations .col-1_6{
+    outline: 3px dashed white;
+    background-color: black;
+    width: calc(1050px / 3);
+    height: 450px;
+    
 }
