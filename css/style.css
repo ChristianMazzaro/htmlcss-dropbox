@@ -23,12 +23,6 @@ GENERAL
 }
 
 
-.my-row-main-1{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-
 .my-row-main-2{
     display: flex;
     flex-wrap: wrap;
@@ -113,11 +107,11 @@ li > a{
 }
 
 header .header-bottom .my-row .col-3{
-    width: 350px;
+    width: 350px
 }
 
-header .header-bottom .my-row .col-3 > button , span{
-    margin-left: 30px;
+header .header-bottom .my-row .col-3 > *{
+    margin: 20px 0;
 }
 
 i{
@@ -174,12 +168,12 @@ Main
 
 main section .main-subscription{
     width: 1100px;
-    height: 1150px;
+    height: 1000px;
     margin: 0 auto;
 }
 
 
-main section .container .my-row-main-2 .main-col-1_3 .col-header-main{
+.col-header-main{
     height: 50px;
     border-bottom: 3px solid lightgrey;
     width: 100%;
@@ -232,15 +226,26 @@ main section .main-subscription .my-row-main-2 .main-col-1_3 hr{
 
 main section .prices .my-row-main-1{
     width: 1100px;
-    height: 450px;
-    background-color: rgb(193, 119, 23);
-    outline: 3px dashed black;
     margin-top: 50px;
-    
+    border: 3px solid lightgrey;
+    position: relative;
 }
 
+.sales-office{
+    padding-left: 3%;
+    padding-top: 3%;
+    max-width: 70%;
+}
 
+.sales-office > *{
+    margin: 3% 0;
+}
 
+.sales-office > button{
+    position: absolute;
+    top: 20%;
+    right: 5%;
+}
 
 
 
@@ -404,7 +409,7 @@ debug main section .prices .my-row-main-1{
 }
 
 
-.debug main section .prices .my-row-main-1 .col-header-main{
+debug main section .prices .my-row-main-1 .col-header-main{
     height: 50px;
     width: 100%;
     outline: 3px dashed black;
@@ -498,10 +503,6 @@ debug main section .prices .my-row-main-1{
     padding: 100px;
     outline: 3px dashed black;
     margin-bottom: 35px;
-}
-
-p{
-    margin: 30px;
 }
 
 .debug footer .col-1_7{
