@@ -141,7 +141,7 @@ li > a{
     font-size: 80px;
     position: absolute;
     top: 130px;
-    left: 300px;
+    left: 500px;
 }
 
 .jumbo{
@@ -514,11 +514,19 @@ footer .footer-menu{
 }   
 
 
-.col-1_7 ul > li , h2{
+.col-1_7 ul > li{
     display: block;
     margin: 20px 0;
     color: white;
 }
+
+ .col-1_7 > h2{
+    display: block;
+    margin: 20px 0;
+    color: white;
+}
+
+
 
 footer .container > hr{
     width: 8%;
