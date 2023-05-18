@@ -29,7 +29,6 @@ GENERAL
 }
 
 
-
 .my-row-main-2{
     display: flex;
     flex-wrap: wrap;
@@ -43,7 +42,12 @@ GENERAL
     margin: 0 auto;
 }
 
-
+button{
+    padding: 10px;
+    background-color: rgba(35, 108, 219, 0.897);
+    border: 0px;
+    color: white;
+}
 
 
 
@@ -53,9 +57,81 @@ Header
 
 */
 
+.header-top{
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 1;
+}
 
+.col-header{
+    height: 70px;
+    width: calc(100% / 2);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
+.right{
+    justify-content: flex-end;
+}
 
+.left{
+    justify-content:flex-start;
+}
+
+li{
+    display: inline-block;
+}
+
+li > a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+
+.header-bottom{
+    background-color: rgb(148, 213, 239);
+    height: 650px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.title-header-bottom{
+    position: relative;
+    width: 1450px;
+}
+
+.title{
+    font-size: 80px;
+    position: absolute;
+    top: 130px;
+    left: 300px;
+}
+
+header .header-bottom .my-row .col-3{
+    width: 350px;
+}
+
+header .header-bottom .my-row .col-3 > button , span{
+    margin-left: 30px;
+}
+
+i{
+    font-size: 40px;
+}
+
+header .header-bottom .my-row .col-4{
+    height: 325px;
+}
+
+header .header-bottom .my-row .col-4 > img{
+    height: 500px;
+    width: 800px;
+}
 
 
 /*
@@ -85,7 +161,7 @@ Debug
 
 */
 
-.debug header .header-top{
+debug header .header-top{
     background-color: brown;
     outline: 3px dashed black;
     width: 100%;
@@ -95,14 +171,14 @@ Debug
 }
 
 
-.debug header .header-top .my-row .col-1{
+debug header .header-top .my-row .col-1{
     background-color: aquamarine;
     outline: 3px dashed black;
     width: calc(100% / 2);
     height: 70px;
 }
 
-.debug header .header-top .my-row .col-2{
+debug header .header-top .my-row .col-2{
     background-color: rgb(63, 146, 177);
     outline: 3px dashed black;
     width: calc(100% / 2);
@@ -112,7 +188,7 @@ Debug
 }
 
 
-.debug header .header-bottom{
+debug header .header-bottom{
     outline: 3px dashed black;
     background-color: greenyellow;
     width: 100%;
@@ -124,19 +200,7 @@ Debug
 }
 
 
-.title-header-bottom{
-    position: relative;
-}
-
-.title{
-    position: absolute;
-    top: 130px;
-    left: 300px;
-}
-
-
-
-.debug header .header-bottom .my-row .col-3{
+debug header .header-bottom .my-row .col-3{
     background-color: rgb(163, 113, 44);
     outline: 3px dashed black;
     width: 350px;
@@ -144,7 +208,7 @@ Debug
 }
 
 
-.debug header .header-bottom .my-row .col-4{
+debug header .header-bottom .my-row .col-4{
     background-color: rgb(165, 71, 142);
     outline: 3px dashed black;
     width: 500px;
@@ -189,10 +253,11 @@ Debug
     outline: 3px dashed black;
 }
 
-.debug main section .container .my-row-main-2 .main-col-1_3 .col-header{
+.debug main section .container .my-row-main-2 .main-col-1_3 .col-header-main{
     height: 50px;
     outline: 3px dashed black;
     background-color: aqua;
+    width: 100%;
 }
 
 
