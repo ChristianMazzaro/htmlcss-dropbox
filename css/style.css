@@ -43,6 +43,38 @@ button{
     color: white;
 }
 
+.green{
+    border: 20px solid rgb(200, 241, 200);
+    background-color: rgb(139, 200, 139);
+}
+
+.brown{
+    background-color: rgb(76, 14, 14);
+}
+
+.skyblue{
+    background-color: rgb(83, 188, 254);
+}
+
+.scarlatto{
+    background-color: rgb(220, 40, 20);
+}
+
+.red{
+    background-color: rgba(255, 0, 0, 0.715);
+}
+
+.azure{
+    background-color: rgb(118, 183, 209);
+}
+
+.blue{
+ background-color: blue;
+}
+
+.yellow{
+    background-color: rgb(233, 218, 46);
+}
 
 
 /*
@@ -106,6 +138,10 @@ li > a{
     left: 300px;
 }
 
+.jumbo{
+    margin-left: 225px;
+}
+
 header .header-bottom .my-row .col-3{
     width: 350px
 }
@@ -126,7 +162,6 @@ header .header-bottom .my-row .col-4 > img{
     height: 500px;
     width: 800px;
 }
-
 
 /*
 
@@ -322,19 +357,79 @@ main section .operations .columns .col-1_6 img{
 }
 
 .text-box{
-    text-align:center;
+    width: 50%;
     padding: 30px;
+    margin-bottom: 100px;
+}
+
+.text-box > *{
+    margin: 50px 0;
+}
+
+.text-box > h2{
+    font-size: 50px ;
+}
+
+.team-members{
+    max-width: 100%;
+    height:600px;
 }
 
 
+.main-col-1_3{
+    width: calc(100% / 3);
+}
+
+.small-col{
+    width: calc(100% / 2);
+    position: relative;
+}
+
+.small-col > img{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50% , -50% );
+    filter: invert(1);
+
+}
+
+.small-col:nth-child(3) > img{
+    height: 12%;
+    width: 55%;
+}
 
 
+main section .team-members .main-col-1_3 .blue > img{
+    height: 50%;
+    width: 50%;
+}
 
 
+.main-col-1_3 > img{
+    height: 50%;
+    width: 50%;
+    
+}
 
+.main-col-1_3 > hr{
+    height: 2px;
+    background-color: lightgrey;
+    border: none;
+    width: 20%;
+    margin: 0 0 0 25px;
+}
 
-
-
+.expo{
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: rgb(233, 231, 231);
+}
 
 
 
@@ -530,23 +625,11 @@ debug main section .operations .col-1_6{
     height: 380px;
 }
 
-.debug .team-members{
+debug .team-members{
     max-width: 100%;
     height:600px;
     outline: 3px dashed black;
     background-color: orange;
-}
-
-
-.main-col-1_3{
-    width: calc(100% / 3);
-}
-
-.small-col{
-    width: calc(100% / 2);
-    height:300px;
-    outline: 3px dashed black;
-    background-color: rgb(165, 71, 142);
 }
 
 .free-trial{
