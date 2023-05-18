@@ -145,11 +145,16 @@ Main
 
 .paying-metods{
     margin-bottom: 50px;
+    margin-top: 30px;
 }
 
 .my-row-main-1{
     width: 1100px;
     margin: 0 auto;
+}
+
+main section .paying-metods .my-row-main-1 > *{
+    margin: 0 20px;
 }
 
 .fa-circle-dot{
@@ -168,8 +173,6 @@ Main
 
 main section .main-subscription{
     width: 1100px;
-    height: 1000px;
-    margin: 0 auto;
 }
 
 
@@ -233,33 +236,95 @@ main section .prices .my-row-main-1{
 
 .sales-office{
     padding-left: 3%;
-    padding-top: 3%;
+    padding-top: 1%;
     max-width: 70%;
+    padding-bottom:1% ;
 }
 
 .sales-office > *{
-    margin: 3% 0;
+    margin: 20px 0;
 }
 
 .sales-office > button{
     position: absolute;
-    top: 20%;
-    right: 5%;
+    top: 25%;
+    right: 3%;
+}
+
+
+main .partners{
+    display: flex;
+    align-items:flex-end ;
+    justify-content:center ;
+    margin-top: 150px;
 }
 
 
 
+main .partners .my-row .col-3{
+    width: 350px;
+    height: 325px;
+    padding: 5%;
+}
 
 
+main .partners .my-row .col-4{
+    width: 500px;
+    height: 425px;
+}
+
+main .partners .my-row .col-3 > *{
+    margin: 20px 0;
+}
+
+.partner-button{
+    background-color: white;
+    color: black;
+    border: 3px solid grey;
+}
+
+main section .partners .my-row .col-4 img{
+    height: 425px;
+    width: 500px;
+}
 
 
+main section .operations > h2{
+    font-size: 50px;
+}
 
 
+main section .operations{
+    width: 1050px;
+    margin-top: 130px;
+    margin-bottom: 100px;
+
+}
+
+main section .operations .columns{
+    gap: 20px;
+    margin-top: 35px;
+}
 
 
+main section .operations .col-1_6{  
+    width: calc((1050px / 3) - 20px);
+}
 
 
+main section .operations .columns .col-1_6 img{
+    height:calc(100% / 2) ;
+    width: 70%;
+}   
 
+.col-1_6 > *{
+    margin-bottom: 20px;
+}
+
+.text-box{
+    text-align:center;
+    padding: 30px;
+}
 
 
 
@@ -417,7 +482,7 @@ debug main section .prices .my-row-main-1 .col-header-main{
 }
 
 
-.debug main .partners{
+debug main .partners{
     display: flex;
     align-items:flex-end ;
     justify-content:center ;
@@ -426,7 +491,7 @@ debug main section .prices .my-row-main-1 .col-header-main{
 
 
 
-.debug main .partners .my-row .col-3{
+debug main .partners .my-row .col-3{
     background-color: rgb(163, 113, 44);
     outline: 3px dashed black;
     width: 350px;
@@ -434,7 +499,7 @@ debug main section .prices .my-row-main-1 .col-header-main{
 }
 
 
-.debug main .partners .my-row .col-4{
+debug main .partners .my-row .col-4{
     background-color: rgb(165, 71, 142);
     outline: 3px dashed black;
     width: 500px;
@@ -442,7 +507,7 @@ debug main section .prices .my-row-main-1 .col-header-main{
 }
 
 
-.debug main section .operations{
+debug main section .operations{
     background-color: yellowgreen;
     width: 1050px;
     height: 843px;
@@ -452,17 +517,13 @@ debug main section .prices .my-row-main-1 .col-header-main{
 
 }
 
-.debug main section .operations .columns{
+debug main section .operations .columns{
     gap: 20px;
     margin-top: 35px;
 }
 
-.text-box{
-    text-align:center;
-    padding: 30px;
-}
 
-.debug main section .operations .col-1_6{
+debug main section .operations .col-1_6{
     outline: 3px dashed white;
     background-color: black;
     width: calc((1050px / 3) - 20px);
