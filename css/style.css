@@ -158,14 +158,6 @@ Main
     margin: 0 auto;
 }
 
-main section .main-subscription{
-    background-color: rgb(173, 66, 68);
-    outline: 3px dashed black;
-    width: 1100px;
-    height: 1150px;
-    margin: 0 auto;
-}
-
 .fa-circle-dot{
     font-size: medium;
     color: rgba(35, 108, 219, 0.897);
@@ -173,31 +165,70 @@ main section .main-subscription{
 }
 
 .fa-circle{
-    font-size: medium;
+    font-size: small;
     color: white;
     border:2px solid lightgrey;
     border-radius: 50%;
 }
 
-main section .container .my-row-main-2{
-    width: 100%;
-    height: 100%;
-    outline: 3px dashed black;
+
+main section .main-subscription{
+    width: 1100px;
+    height: 1150px;
+    margin: 0 auto;
 }
+
 
 main section .container .my-row-main-2 .main-col-1_3 .col-header-main{
     height: 50px;
-    outline: 3px dashed black;
-    background-color: aqua;
+    border-bottom: 3px solid lightgrey;
     width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+.col-header-main span > i{
+    font-size: medium;
 }
 
 main section .container .my-row-main-2 .main-col-1_3{
     width: calc((100% / 3) - 30px);
-    align-self: stretch;
-    outline: 3px dashed black;
-    background-color: lightcoral;
+    border: 3px solid lightgrey;
+    
 }
+
+main section .main-subscription .my-row-main-2 .main-col-1_3 div:nth-child(2){
+    margin: 20px 0;
+
+}
+
+.sub-top , .sub-features, .buy-now, .pros{
+    padding: 2% 8%;
+    max-width: 80%;
+}
+
+.sub-top > span{
+    margin: 0;
+    color: grey;
+}
+
+.pros > div{
+    margin: 20px 0;
+}
+
+.main-column-button{
+    padding: 50px 0 15px 20px;
+}
+
+
+main section .main-subscription .my-row-main-2 .main-col-1_3 hr{
+    height: 2px;
+    background-color: lightgrey;
+    border: none;
+    width: 20%;
+    margin: 50px 0 50px 25px;
+}
+
 
 main section .prices .my-row-main-1{
     width: 1100px;
@@ -443,11 +474,6 @@ debug main section .prices .my-row-main-1{
 
 .main-col-1_3{
     width: calc(100% / 3);
-    align-self: stretch;
-    outline: 3px dashed black;
-    background-color: skyblue;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .small-col{
